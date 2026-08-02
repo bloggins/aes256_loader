@@ -2,13 +2,13 @@
 // aes256_loader_dll.cpp — AES-256-CBC shellcode loader 
 //
 // MSVC x64:
-//   cl /LD /O2 /GS- /std:c++17 aes256_loader_dll.cpp /link /OUT:aes256_loader.dll
+//   cl /LD /O2 /GS- /std:c++17 aes256_loader.cpp /link /OUT:aes256_loader.dll
 //
 // MinGW-w64:
-//   x86_64-w64-mingw32-g++ -shared -o aes256_loader_dll.dll aes256_loader_dll.cpp -static -s -O2 -fno-stack-protector
+//   x86_64-w64-mingw32-g++ -shared -o aes256_loader.dll aes256_loader.cpp -static -s -O2 -fno-stack-protector
 //
 // Load (use the exported Run — NOT DllMain):
-//   rundll32.exe aes256_loader_dll.dll,Run
+//   rundll32.exe aes256_loader.dll,Run
 // ============================================================
 
 #include <windows.h>
